@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="display" id="display">0</div>
+    <button class="btn clear" onclick="clearDisplay()" ontouchend="clearDisplay()">C</button>
+    <button class="btn" onclick="appendToDisplay('7')" ontouchend="appendToDisplay('7')">7</button>
+    <button class="btn" onclick="appendToDisplay('8')" ontouchend="appendToDisplay('8')">8</button>
+    <button class="btn" onclick="appendToDisplay('9')" ontouchend="appendToDisplay('9')">9</button>
+    <button class="btn operator" onclick="appendOperator('+')" ontouchend="appendOperator('+')">+</button>
+    <button class="btn" onclick="appendToDisplay('4')" ontouchend="appendToDisplay('4')">4</button>
+    <button class="btn" onclick="appendToDisplay('5')" ontouchend="appendToDisplay('5')">5</button>
+    <button class="btn" onclick="appendToDisplay('6')" ontouchend="appendToDisplay('6')">6</button>
+    <button class="btn operator" onclick="appendOperator('-')" ontouchend="appendOperator('-')">-</button>
+    <button class="btn" onclick="appendToDisplay('1')" ontouchend="appendToDisplay('1')">1</button>
+    <button class="btn" onclick="appendToDisplay('2')" ontouchend="appendToDisplay('2')">2</button>
+    <button class="btn" onclick="appendToDisplay('3')" ontouchend="appendToDisplay('3')">3</button>
+    <button class="btn operator" onclick="appendOperator('*')" ontouchend="appendOperator('*')">*</button>
+    <button class="btn" onclick="appendToDisplay('0')" ontouchend="appendToDisplay('0')">0</button>
+    <button class="btn" onclick="appendToDisplay('.')" ontouchend="appendToDisplay('.')">.</button>
+    <button class="btn equal" onclick="calculate()" ontouchend="calculate()">=</button>
+    <button class="btn operator" onclick="appendOperator('/')" ontouchend="appendOperator('/')">/</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
